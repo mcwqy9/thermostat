@@ -11,9 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150201003535) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "temperature_readings", force: :cascade do |t|
+    t.string   "station_name"
+    t.integer  "station_id"
+    t.datetime "time"
+    t.float    "reading"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
