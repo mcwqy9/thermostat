@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0'
 gem 'pry'
 gem 'rails_admin'
+gem 'rails_12factor', group: :production
 
 gem 'pg'
 # Use SCSS for stylesheets
